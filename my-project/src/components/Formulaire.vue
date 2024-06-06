@@ -32,7 +32,11 @@ export default {
                 description: '',
                 price: 0
             },
-            errors: {}
+            errors: {
+                title: '',
+                description: '',
+                price: ''
+            }
         }
     },
     methods: {
