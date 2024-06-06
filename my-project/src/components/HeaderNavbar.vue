@@ -9,11 +9,26 @@
         </nav>
         
     </div>
+    <div>
+      <button v-on:click="sayHello">Click me</button>
+      <p v-if="showMessage">{{ message }}</p>
+    </div>
 </template>
 
 <script>
 export default {
   name: 'HeaderNavbar',
+  data() {
+    return {
+      showMessage: false,
+      message: 'Hello, World!'
+    };
+  },
+  methods: {
+    sayHello() {
+      this.showMessage = !this.showMessage;
+    }
+  },
   props: {
     links: {
       type: Array,
