@@ -1,5 +1,5 @@
 <template>
-    <div class="p-6 bg-green-500 text-white">
+    <div class="p-6 bg-green-500 text-white flex-grow">
         <p>Hero</p>
     </div>
 </template>

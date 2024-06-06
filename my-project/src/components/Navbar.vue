@@ -1,5 +1,5 @@
 <template>
-    <div class="p-6 bg-blue-500 text-white flex-grow">
+    <div class="p-6 bg-blue-500 text-white">
         <p>Navbar Menu</p>
         
     </div>
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped>
-    /*.navbar {
+/*.navbar {
         background-color: #000;
         color: #fff;
         padding: 20px;

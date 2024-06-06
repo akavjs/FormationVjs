@@ -1,10 +1,14 @@
 <template>
-    <div class="p-6 bg-blue-500 text-white">
+  <!--<div class="flex flex-col min-h-screen flex-grow">-->
+    <div> 
+     <h1>About</h1>
      <Navbar></Navbar>
      <Hero></Hero>
      <ProductList></ProductList>
      <Footer></Footer>
     </div>
+  <!--</div>-->
+
 </template>
 
 <script>
