@@ -12,12 +12,14 @@ export default {
 
 
 <style scoped>
+/*
     .hero {
         background-color: #914646;
         color: #fff;
         padding: 20px;
         text-align: center;
     }
+    */
 </style>
 
 

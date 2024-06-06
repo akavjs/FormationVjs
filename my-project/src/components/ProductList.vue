@@ -11,12 +11,12 @@ export default {
 </script>
 
 <style scoped>
-    .product-list {
+    /*.product-list {
         background-color: #000;
         color: #fff;
         padding: 20px;
         text-align: center;
-    }
+    }*/
 </style>
 
 
