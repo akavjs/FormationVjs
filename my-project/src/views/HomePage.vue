@@ -3,7 +3,9 @@
         <HeaderNavbar :links="headerNavLinks" />
         <HeroSection :heroBackgroundImage="heroBackgroundImage" />
         <ProductList :products="products" />
+        <Formulaire />
         <MainFooter />
+        
     </div>
 </template>
 
@@ -12,6 +14,7 @@ import HeaderNavbar from '../components/HeaderNavbar.vue';
 import HeroSection from '../components/HeroSection.vue';
 import ProductList from '../components/ProductList.vue';
 import MainFooter from '../components/MainFooter.vue';
+import Formulaire from '../components/Formulaire.vue';
 
 import {productsDB} from '../data/productDB.js';
 import {mainDB} from '../data/mainDB.js';
@@ -23,7 +26,8 @@ export default {
        HeaderNavbar,
        HeroSection,
        ProductList,
-       MainFooter
+       MainFooter,
+       Formulaire
   },
   data() {
     return {

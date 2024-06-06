@@ -13,6 +13,12 @@
       <button v-on:click="sayHello">Click me</button>
       <p v-if="showMessage">{{ message }}</p>
     </div>
+    <div>
+      <button v-on:click="login">Login</button>
+      <button v-on:click="logout">Logout</button>
+      <p v-if="isLoggedIn">You are logged in</p>
+      <p v-else>You are not logged in</p>
+    </div>
 </template>
 
 <script>
@@ -21,12 +27,19 @@ export default {
   data() {
     return {
       showMessage: false,
-      message: 'Hello, World!'
+      message: 'Hello, World!',
+      isLoggedIn: false
     };
   },
   methods: {
     sayHello() {
       this.showMessage = !this.showMessage;
+    },
+    login() {
+      this.isLoggedIn = !this.isLoggedIn;
+    },
+    logout() {
+      this.isLoggedIn = false;
     }
   },
   props: {
