@@ -1,13 +1,21 @@
 <template>
     <div class="p-6 bg-yellow-500 text-white">
-        <p>Footer</p>
+        <nav>
+            <p>{{ footerText }}</p>
+        </nav>
     </div>
 </template>
 
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'MainFooter',
+  props: {
+    footerText: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 

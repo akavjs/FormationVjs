@@ -1,12 +1,20 @@
 <template>
     <div class="p-6 bg-green-500 text-white flex-grow">
-        <p>Hero</p>
+        <nav>
+            <img :src="heroBackgroundImage" alt="Hero Image" class="w-full h-full">
+        </nav>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'HeroSection',
+  props: {
+    heroBackgroundImage: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
