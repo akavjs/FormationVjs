@@ -4,23 +4,24 @@
    <!--<About></About>-->
    <!-- <ChildComponent :message="parentMessage" @child-event="handleChildEvent" /> -->
    <!--<p>Message du composant enfant: {{ childMessage }}</p>-->
-   <HomePage />
+   <!--<HomePage />-->
+   <router-view />
 
   </div>
 <!--</div>-->
 </template>
 
 <script>
-import HomePage from './views/HomePage.vue';
+//import HomePage from './views/HomePage.vue';
 
 
 //import ChildComponent from './components/ChildComponent.vue';
 
 export default {
   name: 'App',
-  components: {
+ /* components: {
    HomePage 
-  },
+  },*/
 }
 </script>
 
